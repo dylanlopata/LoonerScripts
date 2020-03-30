@@ -1,0 +1,24 @@
+* {
+box-sizing: border-box;
+}
+
+body {
+margin: 0;
+font-family: sans-serif;
+text-align: center;
+
+header {
+position: absolute;
+margin-top: 1em;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  margin: 2em
+}
