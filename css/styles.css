@@ -18,7 +18,14 @@ nav ul {
   list-style: none;
 }
 
-nav ul li {
+nav a {
   display: inline-block;
   margin: 1em;
+}
+
+nav a {
+font-weight: 900;
+text-decoration: none;
+text-transform: uppercase;
+font-size: .8rem;
 }
