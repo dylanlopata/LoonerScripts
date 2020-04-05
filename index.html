@@ -1,63 +1,381 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8">
-    <<meta name="viewport" content="width=device-width, intial-scale=1">
-    <title>LoonerScripts</title>
-    <link href="css/styles.css" rel="stylesheet" type="text/css">
-  </head>
+/* ____________________ #body overwrites ______________________________________________________________________________ */
+#body h1{}
+#body h2{}
+#body h3{}
+#body p{}
+#body small{}
+#body a{color:#ffcc66;}
+#body a:hover{}
+#body form{}
+#body ul.navigation li{}
+#body{
+	background-attachment:fixed;
+	background-color:#000;
+	background-image:url(http://lygo.com/ly/zeeblio/styles/black-lace/images/1409.jpg);
+	background-position:60px 0;
+	background-repeat:no-repeat;
+	color:#fff;
+}
+/* ____________________ OuterContainer and Container CSS ______________________________________________________________________________ */
+#body #outerContainer{
+	padding:80px 0 0 160px;
+	position:relative;
+	width:900px;	
+}
+#body #container{}
+/* ____________________ Header CSS ______________________________________________________________________________ */
+/* If you replace the background image in the header, please take notice 
+  that #header.navigation is used for positioning and will also be getting
+  the background image you have specified for #header */
+#body #header{
+	color:#fff;
+  	font-family:Georgia, Times New Roman, serif;
+	_height:80px;
+	margin:0 auto;
+	min-height:80px;
+	padding:0 50px;
+	position:relative; 
+	text-align:left;
+	width:800px;
+}
+#body #header.navigation{
+	_height:100px;
+	min-height:100px;
+	padding:0 50px 20px; 
+}
+#body #header h1, #body #header h2{color:#fff;}
+#body #header h3, #body #header p{color:#999;}
+#body #header a{color:#fff;}
+#body #header ul.navigation{
+	border-bottom:1px solid #4c4b4b;
+	border-top:1px solid #4c4b4b;
+	bottom:0;
+	clear:both;
+	font-family:Arial, Helvetica, sans-serif;
+	height:auto;
+	left:50%;
+	margin:0 0 0 -325px;
+	padding:0;
+	position:absolute;
+	text-transform:uppercase; 
+	width:650px;
+}
+#body #header ul.navigation li{
+	background-image:url(http://lygo.com/ly/zeeblio/styles/black-lace/images/1410.jpg);
+	background-position:right center;
+	background-repeat:no-repeat;
+	float:left;
+	height:auto;
+	padding:0;
+	text-align:center;
+	white-space:nowrap; 
+	width:auto;
+	_width:5%;
+}
+#body #header ul.navigation li a{
+	border:none;
+	color:#ffcc66;
+	display:block;
+	font-size:11px;
+	height:auto;
+	line-height:2.0em;
+	padding:0 7px;
+	text-decoration:none; 
+}
+#body #header ul.navigation li a:hover, #body #header ul.navigation li a.selected{
+	color:#FFF;
+	display:block;
+	font-size:11px;
+	height:auto;
+	line-height:2.0em;
+	padding:0 7px; 
+}
+/* ____________________ Main / Content Area & Side bar CSS ______________________________________________________________________________ */
+#body #main{
+	margin:0 auto;
+	padding:20px 20px 0;
+	width:810px; 
+}
+#body #content{width:580px;}
+#body #content ul.navigation{margin:5px auto;}
+#body #content ul.navigation li{
+	border-right:1px solid #ffcc66;
+	float:left;
+	height:auto;
+	min-width:10px;
+	padding:0 0 0 5px; 
+	text-align:center;
+	white-space:nowrap;
+	_width:5%;	
+}
+#body #content ul.navigation li a{
+	color:#ffcc66;
+	font-size:12px;
+	height:auto;
+	margin-right:5px; 
+	width:auto;
+}
+#body #content ul.navigation li a:hover, #body #content ul.navigation li a.selected{color:#fff; }
+#body #content ul.navigation li a.selected{
+	cursor:default;
+	font-weight:bold; 
+}
+#body #sidebar{
+	min-height:20px;
+	width:180px; 
+}
+/* ____________________ Footer CSS ______________________________________________________________________________ */
+#body #footer{
+	color:#fff;
+	height:auto;
+	margin:10px auto 0;
+	min-height:20px;
+	padding:10px 50px;
+	text-align:left;
+	width:800px; 
+}
+#body #footer ul.navigation{margin:5px auto;}
+#body #footer ul.navigation li{
+	border-right:1px solid #ffcc66;
+	float:left;
+	height:auto;
+	min-width:10px;
+	padding:0 0 0 5px; 
+	text-align:center;
+	white-space:nowrap;
+	_width:5%;	
+}
+#body #footer ul.navigation li a{
+	color:#ffcc66;
+	font-size:12px;
+	height:auto;
+	margin-right:5px; 
+	width:auto;
+}
+#body #footer ul.navigation li a:hover, #body #footer ul.navigation li a.selected{color:#fff;}
+/* ____________________ Layout Specific CSS ______________________________________________________________________________ */
+/*----LAYOUT 1 Column----*/
+#body.layout1c #content{
+	margin:0 auto;
+	width:800px;
+}
+#body.layout1c #sidebar{
+	border-bottom:none;
+	margin:0 0 5px;
+	min-height:1px;
+	height:auto;
+	width:800px; 
+}
+#body.layout1c #sidebar ul.navigation{
+	clear:both;
+	height:25px;
+	margin:5px auto 15px;
+	padding:0; 
+	width:800px;
+}
+#body.layout1c #sidebar ul.navigation li{
+	background-image:url(http://lygo.com/ly/zeeblio/styles/black-lace/images/1410.jpg);
+	background-position:right center;
+	background-repeat:no-repeat;
+	float:left;
+	height:auto;
+	padding:0;
+	text-align:center;
+	white-space:nowrap; 
+	width:auto;
+	_width:5%;
+}
+#body.layout1c #sidebar ul.navigation li a{
+	border:none;
+	color:#ffcc66;
+	display:block;
+	font-size:12px;
+	font-weight:normal;
+	height:auto;
+	line-height:2.0em;
+	padding:0 15px;
+	text-decoration:none; 
+}
+#body.layout1c #sidebar ul.navigation li a:hover, #body.layout1c #sidebar ul.navigation li a.selected{
+	color:#FFF;
+	display:block;
+	font-size:12px;
+	font-weight:normal;
+	height:25px;
+	line-height:2.0em;
+	padding:0 15px; 
+}
+/*----LAYOUT 2 Column Left ----*/
+#body.layout2cl #content{
+	margin:10px 5px 0 0; 
+	width:580px;
+}
+#body.layout2cl #sidebar{
+	border-right:1px solid #4c4b4b;
+	padding:10px 20px 0 0;
+}
+#body.layout2cl #sidebar ul.navigation{
+	border-bottom:1px solid #4c4b4b; 
+	border-top:1px solid #4c4b4b;
+	margin-bottom:25px;
+}
+#body.layout2cl #sidebar ul.navigation li{
+	height:auto;
+	margin:0;
+	padding:0;
+	width:auto; 
+}
+#body.layout2cl #sidebar ul.navigation li a{
+	border:none;
+	color:#ffcc66;
+	display:block;
+	font-size:11px;
+	font-weight:bold;
+	height:25px;
+	line-height:2.0em;
+	padding:0 0 0 10px;
+	text-decoration:none;
+	text-transform:uppercase; 
+}
+#body.layout2cl #sidebar ul.navigation li a:hover, #body.layout2cl #sidebar ul.navigation li a.selected{
+	color:#fff;
+	text-decoration:underline; 
+}
+/*----LAYOUT 2 Column Right----*/
+#body.layout2cr #content{
+	margin:10px 0 0 5px; 
+	width:580px;
+}
+#body.layout2cr #sidebar{
+	border-left:1px solid #4c4b4b;
+	padding:10px 0 0 20px;
+}
+#body.layout2cr #sidebar ul.navigation{
+	border-bottom:1px solid #4c4b4b; 
+	border-top:1px solid #4c4b4b;
+	margin-bottom:25px;	
+}
+#body.layout2cr #sidebar ul.navigation li{
+	height:auto;
+	margin:0;
+	padding:0;
+	width:auto; 
+}
+#body.layout2cr #sidebar ul.navigation li a{
+	border:none;
+	color:#ffcc66;
+	display:block;
+	font-size:11px;
+	font-weight:normal;
+	height:25px;
+	line-height:2.0em;
+	padding:0 0 0 10px;
+	text-decoration:none;
+	text-transform:uppercase; 
+}
+#body.layout2cr #sidebar ul.navigation li a:hover, #body.layout2cr #sidebar ul.navigation li a.selected{
+	color:#fff;
+	text-decoration:underline; 
+}
+/* ____________________ Module Specific Styling ______________________________________________________________________________ */
+#body h1 a.addOnBasicLink{
+	border:none;
+	color:#fff;
+	font-family:Georgia, Times New Roman, serif;
+	font-size:20px;
+	font-weight:normal;
+	text-decoration:none; 
+}
+#body h1 a.addOnBasicLink:hover{text-decoration:underline;}
+#body h3.addOnSectionHead{
+	border:none;
+	color:#fff;
+	font-family:Georgia, Times New Roman, serif;
+	font-size:18px;
+	font-weight:normal; 
+}
+#body div.blogSearch .addOnButton, #body div.blogSearch .addOnButton:hover{
+	background-color:#62615f;
+	background-image:url(http://lygo.com/ly/zeeblio/styles/black-lace/images/1411.jpg);
+	background-repeat:repeat-x;
+	border:solid 1px #62615f;
+	color:#fff;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	font-weight:normal;
+	height:20px;
+	*height:20px;
+	_height:18px;
+	line-height:1.9em;
+	*line-height:1.8em;
+	_line-height:1.7em;
+	text-align:center;
+	text-decoration:none; 
+}
+#body .addOnButton, #body .addOnButton:hover{background-color:#62615f;
+border:solid 1px #62615f;
+	color:#fff;
+	font-family:Arial, Helvetica, sans-serif;
+font-weight:normal;
+	text-align:center;
+	text-decoration:none; 
+}
+#body a.addOnBasicLink{color:#ffcc66; }
+#body a.addOnBasicLink:hover{color:#bfbdb5;}
+#body .addOnBackground{background:none; }
+#body div.commentFormHolder{border:none; }
+#body div.blogSub p.addOnPlainText{border-bottom:1px solid #4c4b4b; }
+#body .addOnHeadline{font-size:20px; color:#fff; }
+#body .addOnSubHead{font-size:18px; color:#fff; }
+#body .addOnSubH3{
+	border:none;
+	color:#fff;
+	font-family:Georgia, Times New Roman, serif;
+	font-size:14px;
+	font-weight:normal; 
+}
+#body .addOnSubH4{font-size:14px;	color:#fff; }
+#body .addOnPlainText{color:#fff; }
+#body .addOnBasicLink{color:#ffcc66; }
+#body .addOnSmallText{color:#fff; }
+#body .addOnBackground{background:#000; }
+#body .addOnShadedText{background-color:#ccc; }
+#body .addOnAccentText{font-size:12px;color:#000;	background-color:#ccc; }
+#body .addOnSectionHead{font-size:16px;color:#000;border-bottom:1px solid #999; }
+#body .addOnMiniNavBox{background-color:#CCC;	border:1px solid #94B6D9;}
+#body .addOnBorder{border:1px solid #999; }
+#body .addOnBorderBottom{border-bottom:1px solid #999; }
+#body .addOnBorderTop{border-top:1px solid #999; }
+#body .addOnGradientTop{}
+#body .addOnGradientBottom{}
+#body .addOnShadowBox{}
+#body .addOnShadowBoxSmall{}
+#body .addOnTableHeading{}
+#body .addOnTableHeadingBg{}
+#body .addOnTableRowBg{background:#e8e8e8; }
+#body .addOnTableRowAltBg{background:#fff; } 
+#body .addOnTableColumnBg{background:#fff; }
+#body .addOnTableColumnAltBg{background:#fff; } 
 
+/* ____________________ mobile layout ______________________________________________________________________________ */
+@media screen and (max-device-width:480px), screen and (max-width:600px){
+/* adds mobile only background */
+#body.mobileLayout{background:url(http://lygo.com/ly/zeeblio/styles/black-lace/images/1409.jpg) repeat-y #000 -112px 0}
 
+/* style for menu button at top right of page */
+#body.mobileLayout #mNavLink{background:#333; color:#FFCC66; border:1px solid #FFCC66}
 
-  <body>
+/* styling for navigation menu to be placed at bottom of page */
+#body.mobileLayout .mobileNav ul{background:#000}
+#body.mobileLayout .mobileNav ul li a{}
+#body.mobileLayout .mobileNav ul li a:hover, #body.mobileLayout .mobileNav ul li a.selected{background:#FFCC66; color:#000}
+#body.mobileLayout .mobileNav ul li.first a{}
+#body.mobileLayout .mobileNav ul li.last a{}
 
-
-    <header>
-      <img src="img/logo.jpg" alt="LoonerScripts logo" class="logo">
-      <nav>
-        <ul>
-          <li><a href="">Home</a></li>
-          <li><a href="">About</a></li>
-          <li><a href="">Contact</a></li>
-
-        </ul>
-      </nav>
-    </header>
-
-    <section class="home-hero">
-
-      <h1 class="title">Script and exploit hub here!</h1>
-      <a href="" class="button button-accent">See Our Work</a>
-
-    </section>
-
-<section class="home-about">
-
-  <div class="home-about-textbox">
-
-    <h1>What this is</h1>
-    <p>This is a website where you can access all the links you need for cheating on roblox</p>
-    <p>This website offers <strong>Scripts,Exploits,and community help</strong></p>
-
-  </div>
-
-</section>
-
-<section class="cheats">
-  <h1>Exploits</h1>
-
-  <figure class="exploit-item">
-    <img src="img\synapsex.jpg" alt="exploit item">
-    <figcaption class="exploit-item-desc">
-      <p>Project title</p>
-      <a href="google.com" class="button button-accent button-small">Project details</a>
-    </figcaption>
-  </figure>
-</section>
-
-
-
-
-
-  </body>
-</html>
+/* mobile layout/content styling */
+#body.mobileLayout #header{padding-top:20px}
+#body.mobileLayout #main{}
+#body.mobileLayout #content{margin-bottom:15px}
+#body.mobileLayout #sidebar{margin-bottom:15px; padding-top:15px}
+#body.mobileLayout #footer{background:#111}
+}
